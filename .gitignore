@@ -1,0 +1,60 @@
+# Build outputs
+build/
+*.o
+*.d
+*.a
+*.so
+*.dylib
+
+# Binaries
+vectorizer
+gen_synthetic
+
+# Generated data (re-created by make bench / make demo)
+data/synthetic/*.pgm
+data/synthetic/*.svg
+data/real/*.pgm
+data/real/*.png
+data/real/*.jpg
+
+# Experiment outputs (keep runtime.csv, ignore plots if regenerated)
+experiments/results/*.png
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv*/
+venv/
+*.egg-info/
+
+# LaTeX
+report/*.aux
+report/*.log
+report/*.out
+report/*.toc
+report/*.fls
+report/*.fdb_latexmk
+report/*.synctex.gz
+report/*.blg
+report/*.bbl
+# Keep report.pdf committed
+!report/report.pdf
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Screenshots generated at runtime
+demo/screenshots/*.png
+
+presentation
